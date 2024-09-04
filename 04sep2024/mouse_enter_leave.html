@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h1>This is heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus iste nesciunt quae, cum unde, voluptatum neque alias dolores adipisci facilis quaerat facere eos hic ad. Nam fuga possimus natus, exercitationem sed debitis fugit molestiae expedita aperiam distinctio, provident laborum ut at adipisci mollitia aliquam cupiditate ea necessitatibus. Odio, quaerat rem.</p>
+
+    <button class="btn1">Hide</button>
+    <button class="btn2">Show</button>
+    <button class="btn3">Toggle</button>
+    
+
+    <script>
+        $(document).ready(function(){
+            $("h1").mouseenter(function(){
+                alert("you have entered in h1 area");
+
+            })
+            $("h1").mouseleave(function(){
+                alert("you have left h1 area");
+
+            })
+            
+            
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <p id="para1">Hello <br> World</p>
+
+  <button id="btn1">Click here</button>
+  <h1></h1>
+
+    <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+           //let content = $("#para1").text();
+           let content = $("#para1").html();
+           $("h1").html(content);
+           //$("h1").html("This is wednesday");
+           //alert(content);
+          })
+          
+            
+            
+        });
+    </script>
+    
+</body>
+</html>
