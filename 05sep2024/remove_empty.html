@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .para1{
+            font-size: 26px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatibus nemo mollitia minus nihil suscipit! Culpa modi, error suscipit at a corporis. Fugiat illum eaque culpa. Quam totam, laboriosam perferendis eum nam nobis. Error accusamus, odio recusandae quae doloribus eveniet.
+    </div>
+
+
+    <div class="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptatibus nemo mollitia minus nihil suscipit! Culpa modi, error suscipit at a corporis. Fugiat illum eaque culpa. Quam totam, laboriosam perferendis eum nam nobis. Error accusamus, odio recusandae quae doloribus eveniet.
+    </div>
+
+    <button id="rmv">Remove</button>
+
+    <button id="emt">Empty</button>
+
+    
+
+
+    <script>
+        $(document).ready(function () {
+            $("#rmv").click(function(){
+                $("div").remove(".para1");
+            })
+            $("#emt").click(function(){
+                $("div").empty();
+            })
+            
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .style1{
+            font-size: 26px;
+            color: rgb(15, 179, 15);
+        }
+        .style2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid yellow;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="style1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatem praesentium aspernatur nobis cumque dolores dolorum velit ipsam quod. Provident in eaque unde dignissimos aut quae commodi. Quis, excepturi voluptas?</div>
+    
+    <button id="btn1">Add class</button>
+
+    <button id="btn2">Remove class</button>
+    
+
+
+    <script>
+        $(document).ready(function () {
+           $("#btn1").click(function(){
+            $("div").addClass("style2");
+           })
+           $("#btn2").click(function(){
+            $("div").removeClass("style1");
+           })
+            
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

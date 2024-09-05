@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <ul>
+        <li>Dhaka</li>
+        <li>Khulna</li>
+        <li>Rangpur</li>
+        <li>Feni</li>
+    </ul>
+    <button id="btn1">before</button>
+    <button id="btn2">after</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                $("ul").before("<h1>Cumilla</h1>");
+            })
+            $("#btn2").click(function(){
+                $("ul").after("<p>Bhola</p>");
+            })
+            
+        });
+
+
+
+    </script>
+    
+</body>
+</html>
