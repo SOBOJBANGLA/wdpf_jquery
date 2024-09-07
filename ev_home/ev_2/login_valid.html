@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="../jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <form action="">
+        Email : <br>
+        <input type="text"  id="email" ><br><br>
+        Password : <br>
+        <input type="text"  id="pass"> <br><br>
+
+        <button id="btn1" type="button">Login</button>
+
+    </form>
+
+    <div id="msz"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function(){
+                let email = $("#email").val();
+                let pass = $("#pass").val();
+
+                $.get("valid.php",{em:email, ps:pass},function(data,status){
+                    $("#msz").html(data);
+
+                })
+
+
+            })
+            
+        });
+
+
+    </script>
+    
+
+
+
+</body>
+</html>
