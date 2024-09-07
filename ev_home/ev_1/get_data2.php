@@ -1,4 +1,4 @@
-<?php $conn = new mysqli("localhost","root","","jq") ?>
+<?php $conn = new mysqli("localhost:3310","root","","jq") ?>
 
 <!DOCTYPE html>
 <html lang="en">

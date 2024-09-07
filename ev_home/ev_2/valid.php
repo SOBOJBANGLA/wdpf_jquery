@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","root","","jq");
+$conn = new mysqli("localhost:3310","root","","jq");
 
 $email = $_GET['em'];
 $pass = $_GET['ps'];
