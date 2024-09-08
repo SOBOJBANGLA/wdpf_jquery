@@ -34,7 +34,7 @@
 
     <script>
         $(document).ready(function () {
-            get_students();
+            $("#show").load("view.php");
 
             $("#submit").click(function(){
                 let formdata= $("#studentform").serialize();
@@ -43,14 +43,9 @@
                     alert(data);
 
                 })
-                get_students();
+                $("#show").load("view.php");
             })
-            function get_students(){
-                $.get("view.php",function(data,status){
-                $("#show").html(data);
-
-                })
-            }
+            
                 
             
         });
