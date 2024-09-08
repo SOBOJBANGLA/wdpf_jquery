@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
     <h3>Entry Form</h3>
-    
+
     <form action="" id="studentform">
         Name : <br>
-        <input type="text" name="name" ><br>
-        Gender : 
-       Male <input type="radio" name="gender"  value="male">
-       Female <input type="radio" name="gender"  value="female"> <br>
+        <input type="text" name="name"><br>
+        Gender :
+        Male <input type="radio" name="gender" value="male">
+        Female <input type="radio" name="gender" value="female"> <br>
 
-       Date of birth : <br>
-        <input type="date" name="date"  ><br>
-       Email :   <br>
-       <input type="text" name="email"  ><br>
-       Phone : <br>
-       <input type="text" name="phone"  ><br>
-       Address : <br>
-       <textarea name="address" ></textarea> <br>
+        Date of birth : <br>
+        <input type="date" name="date"><br>
+        Email : <br>
+        <input type="text" name="email"><br>
+        Phone : <br>
+        <input type="text" name="phone"><br>
+        Address : <br>
+        <textarea name="address"></textarea> <br>
 
-       <input type="button" value="SUBMIT" name="submit" id="submit">
+        <input type="button" value="SUBMIT" name="submit" id="submit">
 
 
     </form>
@@ -36,21 +38,23 @@
         $(document).ready(function () {
             $("#show").load("view.php");
 
-            $("#submit").click(function(){
-                let formdata= $("#studentform").serialize();
+            $("#submit").click(function () {
+                let formdata = $("#studentform").serialize();
                 console.log(formdata);
-                $.post("insert.php",{mydata:formdata},function(data,status){
+                $.post("insert.php", { mydata: formdata }, function (data, status) {
                     alert(data);
 
                 })
+
                 $("#show").load("view.php");
             })
-            
-                
-            
+           
+
+        
         });
 
     </script>
 
 </body>
+
 </html>
